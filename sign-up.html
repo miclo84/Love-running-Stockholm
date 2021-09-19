@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Love Running club for runners in Dublin, Ireland. Urban running, trail running, Dublin docklands and phoenix park.">
-    <meta name="keywords" content="love running, run, running club, runners, ireland, dublin, sport, exercise">
-    <title>Love Running</title>
+    <meta name="description" content="Love Running club for runners in Dublin, Ireland">
+    <meta name="keywords" content="love running, running club, ireland, dublin">
 
-    <!-- Stylesheet -->
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Love Running</title>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <h2 id="logo">Love Running</h2>
+            <h1 id="logo">Love Running</h1>
         </a>
         <nav>
             <ul id="menu">
+                
                 <li>
-                    <a class="active" href="signup.html">Sign Up</a>
+                    <a href="sign-up.html">Sign Up</a>
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
                 </li>
-
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
             </ul>
         </nav>
     </header>
+ 
     <section class="form-section">
-
-
-        <input type="text" id="name" placeholder="Name">
-
-        <input type="text" value="name" id="lname" placeholder="Last Name">
-        
-        <input type="email"id="email" placeholder="Email">
-
-        <label for="Road">Road</label>
-        <input type="radio" id="Road">
-        
-        <label for="Trail ">Trail</label>
-        <input type="radio" id="Trail">
-        
-        <label for="Both ">Both</label>
-        <input type="radio" id="Both">
-
-        <input type="submit" value="submit">
-        
-        
-        
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+            <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
+            <label for="fname">First Name</label>
+            <input id="fname" name="first_name" type="text" required class="text-input">
+            
+            <label for="lname">Last Name</label>
+            <input id="lname" name="last_name" type="text" required class="text-input">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email_address" required class="text-input">
+            
+            <label for="road">Road</label>
+            <input type="radio" id="road" name="running_preference" value="road" required ">
+            <label for="trail">Trail</label>
+            <input type="radio" id="trail" name="running_preference" value="trail" required>
+            <label for="both">Both</label>
+            <input type="radio" id="both" name="running_preference" value="both" required">
+            
+            <input class="join-button" type="submit" value="Let's Run!" >
+        </form>
     </section>
+
     <footer>
-        <ul class="social-networks">
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <ul class="social-network">
+            <li>
+                <a href="http://facebook.com" target="blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+            </li>
+
+            <li>
+                <a href="http://twitter.com" target="blank" rel="noopener" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+            </li>
+
+            <li>
+                <a href="http://instagram.com" target="blank" rel="noopener" aria-label="Visit our instagram page"><i class="fab fa-instagram-square"></i></a>
+            </li>
+
+            <li>
+                <a href="http://youtube.com" target="blank" rel="noopener" aria-label="Visit our youtube page"><i class="fab fa-youtube"></i></a>
+            </li>
         </ul>
     </footer>
 
-    <!-- Font awesome script -->
-    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
